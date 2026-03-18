@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Koby Fallon</title>
+        <link href="CSS/style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <!--This is my first website, learning html as I go-->
+        <header>
+            <div>
+                <nav class="top-nav-menu">
+                    <ul class="Sidebar">
+                        <li id="close">
+                            <a href="#" id="sidebarclose">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="60px" 
+                                viewBox="0 -960 960 960" width="60px" fill="#E98335">
+                                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 
+                                224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                            </svg>
+                            </a>
+                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Portfolio.html">Portfolio</a></li>
+                        <li><a href="Resume.html">Resume</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li id="logo"><a href="index.html"><img src="Content/logo.svg" alt="Koby Fallon logo, home button"></a></li>
+                        <li class="hideonmobile"><a class="hideonmobile" href="Portfolio.html">Portfolio</a></li>
+                        <li class="hideonmobile"><a href="Resume.html">Resume</a></li>
+                        <li class="hideonmobile"><a href="About.html">About</a></li>
+                        <li class="hideonmobile"><a href="Contact.html">Contact</a></li>
+                        <li class="hideondesktop">
+                            <a href="#" id="sidebarmenu" class="hideondesktop">
+                                <svg xmlns="http://www.w3.org/2000/svg" 
+                                height="55px" viewBox="0 -960 960 960" width="55px" fill="#E98335">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v
+                                80H120Zm0-200v-80h720v80H120Z"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="Iphigenia-bg">
+                <h1 class="text-shadow">Lighting Designer + Technician</h1>
+            </section>      
+        </main>    
+
+        <footer>
+           <nav>
+                <ul class="footnav">
+                    <li><a class="blue" href="index.html">Home</a></li>
+                    <li><a class="blue" href="Portfolio.html">Portfolio</a></li>
+                    <li><a class="blue" href="Resume.html">Resume</a></li>
+                    <li><a class="blue" href="About.html">About</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h2 class="orange foot-h2">Contact</h2>
+                    <p> 
+                    <a class="blue" href="mailto:jacobwaldorfallon@gmail.com">jacobwaldorfallon@gmail.com</a>
+                    </p>
+
+                    <p>phone: (267) 624-7139</p>
+                    
+                <p>HTML and CSS written by Koby Fallon. <em>©2026 Koby Fallon. All rights reserved.</em></p>
+            </section>
+        </footer>
+        
+        <script>
+            var showsidebar = document.getElementById("sidebarmenu")
+            showsidebar.onclick = function showsidebar(){
+                const Sidebar = document.querySelector('.Sidebar')
+                Sidebar.style.display = 'flex'
+            }
+            var hidesidebar = document.getElementById("sidebarclose")
+            hidesidebar.onclick = function hidesidebar(){
+                const Sidebar = document.querySelector ('.Sidebar')
+                Sidebar.style.display = 'none'
+            }
+            
+        </script>
+    </body>
+</html>

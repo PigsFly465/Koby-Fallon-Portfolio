@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zodiaque Spring '26</title>
+        <link href="../CSS/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <nav class="top-nav-menu">
+                    <ul class="Sidebar">
+                        <li id="close">
+                            <a href="#" id="sidebarclose">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="60px" 
+                                viewBox="0 -960 960 960" width="60px" fill="#E98335">
+                                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 
+                                224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                            </a>
+                        </li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../Portfolio.html">Portfolio</a></li>
+                        <li><a href="../Resume.html">Resume</a></li>
+                        <li><a href="../About.html">About</a></li>
+                        <li><a href="../Contact.html">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li id="logo"><a href="../index.html"><img src="../Content/logo.svg"></a></li>
+                        <li class="hideonmobile"><a class="hideonmobile" href="../Portfolio.html">Portfolio</a></li>
+                        <li class="hideonmobile"><a href="../Resume.html">Resume</a></li>
+                        <li class="hideonmobile"><a href="../About.html">About</a></li>
+                        <li class="hideonmobile"><a href="../Contact.html">Contact</a></li>
+                        <li class="hideondesktop">
+                            <a href="#" id="sidebarmenu" class="hideondesktop">
+                                <svg xmlns="http://www.w3.org/2000/svg" 
+                                height="55px" viewBox="0 -960 960 960" width="55px" fill="#E98335">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v
+                                80H120Zm0-200v-80h720v80H120Z"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h1 class="porttext">Urinetown at UB
+            </h1>
+                <img class="banner" src="../Content/Portfolio/Banner/UBSnuff-That-Girl.jpg" alt="A young person roars with a wide open mouth, surrounded by other young women.">
+                <h2 class="porttext">
+                    UB Blackbox Theater
+                </h2>
+                    <ul class="no-style porttext">
+                        <li>Doug Weyand, Director and Choreographer</li>
+                        <li>Lynne Koscielniak, Faculty Lighting Mentor</li>
+                        <li>Mallory Tirone, Lighting Designer</li>
+                        <li>Elle Dixon, Set Designer</li>
+                        <li>Faith Marsala, Costume Designer</li>
+
+                    </ul>
+                <h2 class="porttext prole porange">Lighting Programmer, Board Op, and Electrician</h2>
+                <div class="staticinf">
+                    <ul>
+                        <li>Programmed on EOS Apex 10.</li>
+                        <li>Worked with Evelyn McLaughlin (ALD) to plan signal flow and wiring for LED tape arch and LED pixel arrow.</li>
+                        <li>Learned EOS pixel mapping tools for the LED pixel arrow.</li>
+                        <li>Helped head electrian, Phoenix Hall, with hang, focus, and patching</li>
+                        <li>Completed pre-show checks with house remote running iRFR.</li>
+                        <li>After the show closed, aided McLaughlin in converting the arrow to a permanenent LED mockup for demos.</li>
+                    </ul>
+                </div>    
+                
+        <section class="portgridint">
+            <a href="../Content/UBLook-Sky.jpg" target="_blank" class="linkgrid">
+                <img src="../Content/Portfolio/UrinetownUB/UBLook-Sky.jpg">
+
+            </a>
+            
+            <a href="../Content/Programming Urinetown.jpg" target="_blank" class="linkgrid">
+                <img src="../Content/Portfolio/UrinetownUB/Programming Urinetown.jpg">
+            </a>
+
+            <a href="../Content/Urinetown Arrow.jpg" target="_blank" class="linkgrid">
+                <img src="../Content/Portfolio/UrinetownUB/Urinetown-Arrow.jpg">
+            </a>
+        </section>
+        <p class="portphotos">Photos by <strong> Eric Tronolone</strong> and <strong>Koby Fallon</strong></p>
+            
+        </main>
+        <footer>
+            <nav>
+                <ul class="footnav">
+                    <li><a class="blue" href="index.html">Home</a></li>
+                    <li><a class="blue" href="Portfolio.html">Portfolio</a></li>
+                    <li><a class="blue" href="Resume.html">Resume</a></li>
+                    <li><a class="blue" href="About.html">About</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <h2 class="orange foot-h2">Contact</h2>
+                    <p>
+                        <a class=blue href="mailto:jacobwaldorfallon@gmail.com">jacobwaldorfallon@gmail.com</a>
+                    </p>
+
+                    <p>phone: (267) 624-7139</p>
+
+            </section>
+
+            <section>
+                <p>HTML and CSS written by Koby Fallon. <em>©2026 Koby Fallon. All rights reserved.</em></p>
+            </section>
+        </footer>     
+         
+    </body>
+    <script>
+        document.getElementById("skills").onclick = function() {
+                document.querySelector('#skillsinfo').style.display = 'flex'}
+        document.getElementById("closeinfo").onclick = function() {
+                document.querySelector('#skillsinfo').style.display = 'none'}
+        
+        document.getElementById("process-photos-b").onclick = function() {
+                document.querySelector('#process-photos').style.display = 'flex'}
+        document.getElementById("closeprocessphoto").onclick = function() {
+                document.querySelector('#process-photos').style.display = 'none'}
+    </script>
+</html>

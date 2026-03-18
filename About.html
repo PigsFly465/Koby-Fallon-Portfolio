@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <link href="CSS/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <nav class="top-nav-menu">
+                    <ul class="Sidebar">
+                        <li id="close">
+                            <a href="#" id="sidebarclose">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="60px" 
+                                viewBox="0 -960 960 960" width="60px" fill="#E98335">
+                                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 
+                                224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                            </a>
+                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Portfolio.html">Portfolio</a></li>
+                        <li><a href="Resume.html">Resume</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li id="logo"><a href="index.html"><img src="Content/logo.svg"></a></li>
+                        <li class="hideonmobile"><a class="hideonmobile" href="Portfolio.html">Portfolio</a></li>
+                        <li class="hideonmobile"><a href="Resume.html">Resume</a></li>
+                        <li class="hideonmobile"><a href="About.html">About</a></li>
+                        <li class="hideonmobile"><a href="Contact.html">Contact</a></li>
+                        <li class="hideondesktop">
+                            <a href="#" id="sidebarmenu" class="hideondesktop">
+                                <svg xmlns="http://www.w3.org/2000/svg" 
+                                height="55px" viewBox="0 -960 960 960" width="55px" fill="#E98335">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v
+                                80H120Zm0-200v-80h720v80H120Z"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h1>About</h1>
+            <h2>Koby Fallon</h2>
+            <div class="flexcont">
+                
+                    <p class="aboutp" id="nexttoheadshot">
+                        I am a lighting designer, programmer, and technician. I have three and a half years of experience starting in Sophomore year of high school with EOS Family consoles. In my first year at the University at Buffalo (UB), I have focused on programming and electrics. Through programming two productions, I gained familiarity with the EOS pixel mapping system and further developed my ability to work with the effects engine. In the most recent semester, I have taken a role as the department information technologist in an attempt to improve my knowledge on networking and signal flow. 
+                    </p>
+                    <div class="headshotwrap">
+                        <img class="headshot" src="Content/KobyFallon_Headshot.jpg">
+                    </div>
+                    <p class="bottomp">
+                        In high school, I was incredibly lucky to have Seth Schmitt-Hall and Kittson O'Neill as mentors. I was the head electrician on three shows, primarily working off of a rep plot and assisting designers in refocusing specials. In my senior year, I was able to program and design a world premiere show (Iphigenia Dead/Alive), including drafting in Vectorworks, power management calculations, hanging and focusing the plot, building LED practicals, and creating atmospheric effects. I programmed and designed a middle school musical the same year (Beauty and the Beast JR.), mentoring middle school students to act as board ops and spot ops. I also served as a house lighting designer and programmer for rentals of our auditorium in Junior and Senior year, collaborating with outside dance companies, lecturers, or even rabbinical schools to make sure all their unique needs were met.
+                    </p>
+            </div>
+            
+        </main>
+
+        <footer>
+           <nav>
+                <ul class="footnav">
+                    <li><a class="blue" href="index.html">Home</a></li>
+                    <li><a class="blue" href="Portfolio.html">Portfolio</a></li>
+                    <li><a class="blue" href="Resume.html">Resume</a></li>
+                    <li><a class="blue" href="About.html">About</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <h2 class="orange foot-h2">Contact</h2>
+                    <p>
+                        <a class=blue href="mailto:jacobwaldorfallon@gmail.com">jacobwaldorfallon@gmail.com</a>
+                    </p>
+
+                    <p>phone: (267) 624-7139</p>
+
+            </section>
+
+            <section>
+                <p>HTML and CSS written by Koby Fallon. <em>©2026 Koby Fallon. All rights reserved.</em></p>
+            </section>
+        </footer>      
+    
+        <script>
+            var showsidebar = document.getElementById("sidebarmenu")
+            showsidebar.onclick = function showsidebar(){
+                const Sidebar = document.querySelector('.Sidebar')
+                Sidebar.style.display = 'flex'
+            }
+            var hidesidebar = document.getElementById("sidebarclose")
+            hidesidebar.onclick = function hidesidebar(){
+                const Sidebar = document.querySelector ('.Sidebar')
+                Sidebar.style.display = 'none'
+            }
+            
+        </script>
+    </body>
+</html>
